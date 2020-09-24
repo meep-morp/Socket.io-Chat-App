@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	font-family: "Ubuntu", sans-serif;
+	font-size: 1.2rem;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.chat-window {
+	margin-top: 25px;
+	height: 90vh;
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	background: rgb(235, 235, 235);
+	border-radius: 20px;
+	box-shadow: 0 0 3px rgb(177, 176, 176);
+}
+
+.italic {
+	font-style: italic;
+	font-weight: 300;
+	color: rgb(136, 135, 135);
+}
+
+#output {
+	height: 85%;
+	max-height: 85%;
+	margin: 10px;
+	overflow: hidden;
+}
+
+#output strong {
+	color: rgb(243, 243, 243);
+	text-shadow: 0 0 2px black;
+	font-weight: bold;
+}
+
+.user-message {
+	border-radius: 20px;
+	border-bottom-right-radius: 5px;
+	margin: 5px;
+	height: 25px;
+	padding: 20px;
+
+	background: rgb(151, 255, 160);
+	background: linear-gradient(
+		114deg,
+		rgba(151, 255, 160, 1) 0%,
+		rgba(107, 254, 255, 1) 100%
+	);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 35%;
+}
+
+form input,
+textarea {
+	width: 85%;
+	height: 25px;
+	border-radius: 20px;
+	border: 1px transparent solid;
+	padding: 6px;
+	box-shadow: 0 0 1px gray;
+	outline: none;
+}
+
+form textarea {
+	margin-top: 3px;
+	min-height: 50px;
+	max-height: 70px;
+	resize: none;
+}
+
+form input:focus,
+textarea:focus {
+	border: 1px blue solid;
+}
+
+form button {
+	background: rgb(77, 77, 226);
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 20px;
+	width: 85%;
+	height: 30px;
+	margin: 0;
+	padding: 2px;
+	margin-top: 5px;
+}
+
+form button:hover {
+	background: rgb(126, 126, 247);
+	transition: 0.3s ease;
+}
