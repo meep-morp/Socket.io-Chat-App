@@ -1,4 +1,4 @@
-<h1 align="center">Socket.io-Chat-App</h1>
+<h1 align="center">Socket.io-Chat-App :speech_balloon:</h1>
 
 <a href="https://socket-io-chat-app.vercel.app/">Deployed using Vercel</a>
 
